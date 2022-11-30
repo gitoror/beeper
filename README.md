@@ -43,7 +43,7 @@ console.log("SOMETHING ELSE WITH CALLBACKS\n");
 // Promises
 // Better (no nesting), but still not as neat as sequential code
 readFile2("test1.txt", "utf-8")
-  .then(() => {
+  .then((data) => {
     console.log(data);
     return readFile2("test2.txt", "utf-8");
   })
